@@ -1,0 +1,7 @@
+html {
+    font: 16px/1.5 montserrat;
+}
+
+body, form, table, input, textarea, option, select {
+    font: inherit;
+}

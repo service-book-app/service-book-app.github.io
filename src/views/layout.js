@@ -8,21 +8,23 @@ const userNavTemplate = html`
 <li><a href="/logout">Logout</a></li>`;
 
 export const layoutTemplate = (userData, content) => html`
-<header class="site-header">
-    <nav>
-        <ul>
-            <li><a href="/"></a>Home</li>
-            ${userData
-            ? userNavTemplate
-            : guestNavTemplate}
-        </ul>
-    </nav>
-</header>
+<div class="site">
+    <header class="site-header">
+        <nav>
+            <ul>
+                <li><a href="/"></a>Home</li>
+                ${userData
+                ? userNavTemplate
+                : guestNavTemplate}
+            </ul>
+        </nav>
+    </header>
 
-<main class="site-main">
-    ${content}
-</main>
+    <main class="site-main">
+        ${content}
+    </main>
 
-<footer class="site-footer">
+    <footer class="site-footer">
 
-</footer>`;
+    </footer>
+</div>`;
