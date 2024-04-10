@@ -1,0 +1,12 @@
+.site-header {
+    background-color: rgb(24, 49, 83);
+}
+
+.fa-solid {
+    font-size: 3em;
+    padding: 0.5em;
+}
+
+.nav-buttons {
+    display: inline-block;
+}

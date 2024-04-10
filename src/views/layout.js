@@ -1,22 +1,28 @@
 import { html } from "../lib/lit-html.js";
 
 const guestNavTemplate = html`
-<li><a href="/login">Login</a></li>
-<li><a href="/register">Register</a></li>`;
+<div class="guest">
+    <a href="/login" class="button">Login</a>
+    <a href="/register" class="button">Register</a>
+</div>`;
 
 const userNavTemplate = html`
-<li><a href="/logout">Logout</a></li>`;
+<div class="user">
+    <a href="/logout" class="button">Logout</a>
+</div>`;
 
 export const layoutTemplate = (userData, content) => html`
 <div class="site">
     <header class="site-header">
         <nav>
-            <ul>
-                <li><a href="/"></a>Home</li>
+            <a href="/">
+                <i class="fa-solid fa-screwdriver-wrench" style="color: #FFD43B;"></i>
+            </a>
+            <div class="nav-buttons">
                 ${userData
                 ? userNavTemplate
                 : guestNavTemplate}
-            </ul>
+            </div>
         </nav>
     </header>
 
