@@ -7,7 +7,7 @@ const loginTemplate = (onSubmit) => html`
         <form class="login-form" @submit=${onSubmit}>
             <input type="email" id="login-email" name="login-email" placeholder="email">
             <input type="password" id="login-password" name="login-password"placeholder="password">
-            <button type="submit" class="button">Login</button>
+            <button type="submit" class="button">Submit</button>
             <p>Don't have an account? <a href="/register">Create one</a></p>
         </form>
     <div>
