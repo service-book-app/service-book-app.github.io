@@ -5,11 +5,12 @@ const registerTemplate = (onSubmit) => html`
     <div class="form">
         <h2>Register</h2>
         <form class="register-form" @submit=${onSubmit}>
-        <input type="email" id="register-email" name="register-email" placeholder="email">
-        <input type="password" id="register-password" name="register-password" placeholder="password">
-        <input type="password" id="register-repass" name="register-repass" placeholder="repeat password">
-        <button type="submit" class="button">Submit</button>
-        <p>Already have an account? <a href="/login">Login</a></p>
+            <input type="text" id="register-username" name="register-username" placeholder="username">
+            <input type="password" id="register-password" name="register-password" placeholder="password">
+            <input type="password" id="register-repass" name="register-repass" placeholder="repeat password">
+            <input type="email" id="register-email" name="register-email" placeholder="email">
+            <button type="submit" class="button">Submit</button>
+            <p>Already have an account? <a href="/login">Login</a></p>
         </form>
     </div>
 </section>`;
