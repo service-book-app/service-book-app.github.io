@@ -19,8 +19,22 @@ async function request(method, url, data) {
 
     try {
         const response = await fetch(host + url, options);
-    } catch (error) {
+
+        let result;
+        if (response.status != 204) {
+            result = await response.json();
+        }
+
+        if (response.ok == false) {
+            const error = result;
+            throw error;
+        }
+
+        return result;
         
+    } catch (error) {
+        alert(error.message);
+        throw error;
     }
 }
 
