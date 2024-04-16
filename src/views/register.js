@@ -1,6 +1,6 @@
 import { html } from "../lib/lit-html.js";
 import { register } from "../service/auth.js";
-import { onSubmitHandler } from "../util.js";
+import { onSubmitHandler, validateForm } from "../util.js";
 
 const registerTemplate = (onSubmit) => html`
 <section id="register">
@@ -22,7 +22,11 @@ export const registerView = (ctx) => {
 };
 
 const onSubmit = async (ctx, data, e) => {
-    await register(data.username, data.password, data.email);
-    e.target.reset();
-    ctx.page.redirect('/');
+    const { username, password, repass, email } = data;
+    const isValid = validateForm(username, password, email, repass);
+    if (isValid) {
+        await register(username.trim(), password.trim(), email.trim());
+        e.target.reset();
+        ctx.page.redirect('/');
+    }
 };
