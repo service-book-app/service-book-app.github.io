@@ -17,6 +17,10 @@ async function request(method, url, data) {
         options.body = JSON.stringify(data);
     }
 
+    if (url == '/users' || url == '/login') {
+        options.headers['X-Parse-Revocable-Session'] = 1;
+    }
+
     try {
         const response = await fetch(host + url, options);
 
@@ -33,7 +37,7 @@ async function request(method, url, data) {
         return result;
         
     } catch (error) {
-        alert(error.message);
+        alert(error.error);
         throw error;
     }
 }

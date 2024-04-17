@@ -14,11 +14,11 @@ export const onSubmitHandler = (ctx, handler) => {
     }
 };
 
-export const validateForm = (username, password, email, repeatPassword = null) => {
+export const validateForm = (username, password, repeatPassword = null) => {
     let valid = true;
     const alertP = document.getElementsByClassName('alert')[0];
 
-    if (!username || !password || !email || (repeatPassword != null && !repeatPassword)) {
+    if (!username || !password || (repeatPassword != null && !repeatPassword)) {
         alertP.textContent = 'Please, fill all fields.';
         valid = false;
     }
