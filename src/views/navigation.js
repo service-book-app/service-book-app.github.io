@@ -4,7 +4,8 @@ const guestNavTemplate = html`
 <a href="/login" class="button">Login</a>
 <a href="/register" class="button">Register</a>`;
 
-const userNavTemplate = html`
+const userNavTemplate = (user) => html`
+<p id="welcome">Welcome ${user}</p>
 <a href="/logout" class="button">Logout</a>`;
 
 export const navTemplate = (userData) => html`
@@ -13,7 +14,6 @@ export const navTemplate = (userData) => html`
         <i class="fa-solid fa-screwdriver-wrench" style="color: #FFD43B;"></i>
     </a>
     ${userData
-    ? userNavTemplate
+    ? userNavTemplate(userData.username)
     : guestNavTemplate}
 </nav>`;
-

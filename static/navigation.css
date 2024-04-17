@@ -6,3 +6,8 @@
     font-size: 3em;
     padding: 0.5em;
 }
+
+#welcome {
+    display: inline-block;
+    color: rgb(255, 212, 59);
+}
