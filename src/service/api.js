@@ -1,3 +1,5 @@
+import { getSessionToken } from "../util.js";
+
 const host = 'https://parseapi.back4app.com';
 const appId = 'WSZLGjYI2skvfJRM5LNgilswzx0uJaE59wgo01R1';
 const apiKey = 'DTt5dWFPmHt4PIAmkaHzVJwVQxiTm1L1mxAAmrvF';
@@ -19,6 +21,10 @@ async function request(method, url, data) {
 
     if (url == '/users' || url == '/login') {
         options.headers['X-Parse-Revocable-Session'] = 1;
+    }
+
+    if (url == '/logout') {
+        options.headers['X-Parse-Session-Token'] = getSessionToken();
     }
 
     try {

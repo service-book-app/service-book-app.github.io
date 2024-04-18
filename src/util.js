@@ -6,6 +6,15 @@ export const setUserData = (userData) => {
     sessionStorage.setItem('userData', JSON.stringify(userData))
 };
 
+export const clearUserData = () => {
+    sessionStorage.removeItem('userData');
+};
+
+export const getSessionToken = () => {
+    const userData = getUserData();
+    return userData?.sessionToken;
+};
+
 export const onSubmitHandler = (ctx, handler) => {
     return function (e) {
         e.preventDefault();
