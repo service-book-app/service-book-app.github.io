@@ -40,5 +40,5 @@ export const addVehicleView = (ctx) => {
 };
 
 const onSubmit = (ctx, data, e) => {
-
+    
 };
