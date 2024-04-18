@@ -6,6 +6,7 @@ const guestNavTemplate = html`
 
 const userNavTemplate = (user) => html`
 <p id="welcome">Welcome ${user}</p>
+<a href="/add" class="button">Add vehicle</a>
 <a href="/logout" class="button">Logout</a>`;
 
 export const navTemplate = (userData) => html`

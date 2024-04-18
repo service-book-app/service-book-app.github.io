@@ -6,9 +6,9 @@ const loginTemplate = (onSubmit) => html`
 <section id="login">
     <div class="form">
         <h2>Login</h2>
-        <form class="login-form" @submit=${onSubmit}>
-            <input type="text" id="username" name="username" placeholder="Username">
-            <input type="password" id="password" name="password"placeholder="Password">
+        <form class="login" @submit=${onSubmit}>
+            <input type="text" id="username" name="username" placeholder="Username" />
+            <input type="password" id="password" name="password"placeholder="Password" />
             <button type="submit" class="button">Submit</button>
             <p class="alert"></p>
             <p>Don't have an account? <a href="/register">Create one</a></p>

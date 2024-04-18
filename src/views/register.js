@@ -6,7 +6,7 @@ const registerTemplate = (onSubmit) => html`
 <section id="register">
     <div class="form">
         <h2>Register</h2>
-        <form class="register-form" @submit=${onSubmit}>
+        <form class="register" @submit=${onSubmit}>
             <input type="text" id="username" name="username" placeholder="Username">
             <input type="password" id="password" name="password" placeholder="Password">
             <input type="password" id="repass" name="repass" placeholder="Repeat password">
