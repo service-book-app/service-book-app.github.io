@@ -1,5 +1,6 @@
 import { post } from "./api.js";
 
 export const addVehicle = async (data) => {
-    await post('/classes')
+    const newVehicle = await post('/classes/vehicles', data);
+    console.log(newVehicle);
 };

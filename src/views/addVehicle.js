@@ -1,4 +1,5 @@
 import { html } from "../lib/lit-html.js";
+import { addVehicle } from "../service/data.js";
 import { onSubmitHandler } from "../util.js";
 
 const addVehicleTemplate = (onSubmit) => html`
@@ -40,5 +41,7 @@ export const addVehicleView = (ctx) => {
 };
 
 const onSubmit = (ctx, data, e) => {
-    
+    addVehicle(data);
+    e.target.reset();
+    ctx.page.redirect('/');
 };
