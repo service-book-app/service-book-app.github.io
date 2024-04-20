@@ -4,10 +4,10 @@ const homeTemplate = () => html`
 <h1>SERVICE BOOK</h1>
 <h4>of your personal vehicle</h4>
 <ul>
-  <li>Repair</li>
-  <li>Diagnostics</li>
-  <li>Spare parts</li>
-  <li>Administrative costs</li>
+  <li><i class="fa-solid fa-gear fa-lg"></i>Repair</li>
+  <li><i class="fa-solid fa-gear fa-lg"></i>Diagnostics</li>
+  <li><i class="fa-solid fa-gear fa-lg"></i>Spare parts</li>
+  <li><i class="fa-solid fa-gear fa-lg"></i>Administrative costs</li>
 </ul>
 <p>The service book gives you the opportunity to mark and monitor all costs and periodic events related to the repair and operation of your car.</p>`;
 

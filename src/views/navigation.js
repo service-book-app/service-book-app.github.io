@@ -7,7 +7,6 @@ const guestNavTemplate = html`
 const userNavTemplate = (user) => html`
 <p id="welcome">Welcome ${user}</p>
 <a href="/add" class="button">Add vehicle</a>
-<a href="/driver" class="button">Add driver</a>
 <a href="/info" class="button">Info</a>
 <a href="/logout" class="button">Logout</a>`;
 
