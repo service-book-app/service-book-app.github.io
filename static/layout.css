@@ -1,5 +1,5 @@
 .site {
-    max-width: 95em;
+    max-width: 70em;
     margin: auto;
 }
 
@@ -24,5 +24,9 @@ h1, h2, h3, h4, h5, h6, p {
 ul {
     display: table;
     margin: 0 auto;
-    list-style-type: circle;
+    list-style-type: none;
+}
+
+.fa-gear {
+    margin: 0.5em;
 }
