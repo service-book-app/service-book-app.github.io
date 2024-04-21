@@ -43,5 +43,5 @@ export const addVehicleView = (ctx) => {
 const onSubmit = (ctx, data, e) => {
     addVehicle(data);
     e.target.reset();
-    ctx.page.redirect('/');
+    ctx.page.redirect('/all');
 };
