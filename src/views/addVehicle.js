@@ -40,8 +40,8 @@ export const addVehicleView = (ctx) => {
     ctx.render(addVehicleTemplate(onSubmitHandler(ctx, onSubmit)))
 };
 
-const onSubmit = (ctx, data, e) => {
-    addVehicle(data);
+const onSubmit = async (ctx, data, e) => {
+    await addVehicle(data);
     e.target.reset();
     ctx.page.redirect('/all');
 };
