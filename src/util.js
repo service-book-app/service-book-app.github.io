@@ -1,13 +1,13 @@
 export const getUserData = () => {
-    return JSON.parse(sessionStorage.getItem('userData'));
+    return JSON.parse(localStorage.getItem('userData'));
 };
 
 export const setUserData = (userData) => {
-    sessionStorage.setItem('userData', JSON.stringify(userData))
+    localStorage.setItem('userData', JSON.stringify(userData));
 };
 
 export const clearUserData = () => {
-    sessionStorage.removeItem('userData');
+    localStorage.removeItem('userData');
 };
 
 export const getSessionToken = () => {
