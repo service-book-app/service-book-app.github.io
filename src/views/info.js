@@ -23,9 +23,9 @@ const infoTemplate = html`
     <h6>Replacement</h6>
     <p>As a reminder, in the "Replacement" section, record either the time or mileage for the next consumables replacement. Simultaneously, enter the corresponding details/consumables in the "Expenses" section as well.</p>
     <h6>Expenses</h6>
-    <p>Here, record all expenses related to the car: <span class="bold">spare parts, oil, coolant, new equipment, as well as services like car washes, insurance, technical inspections, fines, etc.</span> <em>Please do not duplicate amounts that have already been described in the "Repairs" section.</em></p>
+    <p>Here, record all expenses related to the car: <strong>spare parts, oil, coolant, new equipment, as well as services like car washes, insurance, technical inspections, fines, etc.</strong> <em>Please do not duplicate amounts that have already been described in the "Repairs" section.</em></p>
     <h6>Repair</h6>
-    <p>It is of great importance to accurately record all <span class="bold">repair activities, adjustments, replacements, and diagnostics</span> performed on your car. <em>Please request that this be done at the service center you use!<em></p>
+    <p>It is of great importance to accurately record all <strong>repair activities, adjustments, replacements, and diagnostics</strong> performed on your car. <em>Please request that this be done at the service center you use!<em></p>
 </section>`;
 
 export const infoView = (ctx) => {
