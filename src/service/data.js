@@ -1,9 +1,9 @@
 import { get, post } from "./api.js";
 
 export const addVehicle = async (data) => {
-    return await post('/classes/vehicles', data);
+    return post('/classes/vehicles', data);
 };
 
-const retrievAllVehicles = async () => {
+export const retrievAllVehicles = async () => {
     return get('/classes/vehicles');
 };
