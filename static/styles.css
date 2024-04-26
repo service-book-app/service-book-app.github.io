@@ -5,3 +5,18 @@
 .fa-gear {
     color: rgb(255, 212, 59);
 }
+
+.card {
+    width: 18rem;
+}
+
+.card-buttons a {
+    display: block;
+    text-align: center;
+}
+
+.del:hover {
+    background-color:rgb(212, 5, 5);
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+}
