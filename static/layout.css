@@ -13,12 +13,27 @@ input, textarea {
     resize: none;
 }
 
-.form {
+p + h1,
+p + h2,
+p + h3,
+p + h4,
+p + h5,
+p + h6 {
+    padding-top: 0.5em;
+}
+
+p {
+    margin: 0;
+    padding: 0 0 1.5em 0;
+}
+
+.form, p {
     text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6 {
     text-align: center;
+    margin: 0.5em 0 1.5em 0;
 }
 
 ul {
@@ -29,4 +44,13 @@ ul {
 
 .fa-gear {
     margin: 0.5em;
+}
+
+.rpl {
+    display: inline-block;
+    margin: 0 0.5em 0.5em 0.5em;
+}
+
+.replacement {
+    text-align: center;
 }

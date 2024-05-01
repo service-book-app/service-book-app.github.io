@@ -7,7 +7,7 @@ const vehicleTemplate = () => html`
         <h5 class="card-title">Model</h5>
         <p class="card-text">Short info</p>
         <div class="card-buttons">
-            <a href="#" class="button">Replacement</a>
+            <a href="/replacement" class="button">Replacement</a>
             <a href="#" class="button">Expenses</a>
             <a href="#" class="button">Repair</a>
             <a href="#" class="button del">Delete</a>

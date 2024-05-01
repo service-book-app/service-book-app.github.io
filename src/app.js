@@ -8,6 +8,7 @@ import { homeView } from './views/home.js';
 import { infoView } from './views/info.js';
 import { loginView } from './views/login.js';
 import { registerView } from './views/register.js';
+import { replacementView } from './views/replacement.js';
 
 page(decorateContext);
 
@@ -19,5 +20,6 @@ page('/logout', logout);
 page('/add', addVehicleView);
 page('/info', infoView);
 page('/all', allVehiclesView);
+page('/replacement', replacementView);
 
 page.start();
