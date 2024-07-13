@@ -1,10 +1,7 @@
 .site {
     max-width: 70em;
     margin: auto;
-}
-
-.button {
-    margin-left: 30px;
+    height: 100vh;
 }
 
 input, textarea {

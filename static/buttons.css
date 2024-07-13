@@ -1,17 +1,18 @@
 .button {
-    color: rgb(24, 49, 83);
-    text-decoration: none;
-    border: 3px solid rgb(255, 212, 59);
-    border-radius: 10px;
-    padding: 1em;
-    margin: 0.6em;
-    background-color: rgb(255, 212, 59);
-    font-weight: bold;
-    transition: 0.5s;
+  padding: 0.5em;
+  margin-right: 0.6rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  border: 3px solid rgb(255, 212, 59);
+  color: rgb(24, 49, 83);
+  background-color: rgb(255, 212, 59);
+  font-weight: bold;
+  transition: 0.5s;
+  text-align: center;
 }
 
 .button:hover {
-    background-color: rgb(24, 49, 83);
-    color: rgb(255, 212, 59);
-    transition: 0.5s;
+  background-color: rgb(24, 49, 83);
+  color: rgb(255, 212, 59);
+  transition: 0.5s;
 }
