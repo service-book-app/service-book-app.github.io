@@ -1,5 +1,6 @@
 import { html } from "../lib/lit-html.js";
 import { navTemplate } from "./navigation.js";
+import { footerTemplate } from "./footer.js"
 
 
 export const layoutTemplate = (userData, content) => html`
@@ -13,6 +14,6 @@ export const layoutTemplate = (userData, content) => html`
     </main>
 
     <footer class="site-footer">
-    
+        ${footerTemplate}
     </footer>
 </div>`;

@@ -2,8 +2,8 @@ import { html } from "../lib/lit-html.js";
 
 const homeTemplate = () => html`
 <h1>SERVICE BOOK</h1>
-<h4>of your personal vehicle</h4>
-<ul>
+<h3><i>of your personal vehicle</i></h3>
+<ul class="list">
   <li><i class="fa-solid fa-gear fa-lg"></i>Repair</li>
   <li><i class="fa-solid fa-gear fa-lg"></i>Diagnostics</li>
   <li><i class="fa-solid fa-gear fa-lg"></i>Spare parts</li>
